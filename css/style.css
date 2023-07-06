@@ -14,6 +14,9 @@ a{
 ul,ol {
     list-style: none;
 }
+img{
+    max-width: 100%;
+}
 /*Comienza la sección index*/
 
 #icono{ 
@@ -21,15 +24,21 @@ ul,ol {
     display: flex;
     opacity: 80%;
 }
-header div{
-    background-color:rgb(0, 0, 0); 
+.portada{
     background-image:url(../img/portada.jpg); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+}
+header div{
+    color: black;
+    background-color:rgb(0, 0, 0); 
     margin-bottom: 0px;
     border: solid;
     border-bottom: solid;
+}
+.navbar{
+    display: none;
 }
 .titulos-2{ 
     font-size: 2.5rem;
@@ -41,19 +50,23 @@ header div{
     font-size: 2.5rem;
     margin-top: 15px;
 }
+header nav{
+    display: flex;
+    width: 100%;
+}
 nav ul{
     background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 nav ul li{
-    display: inline-block; 
-    margin: 0% 7.9%; 
     background-color: black;
     font-size: 1.05rem;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
 nav ul li a{
     color: white;
+    font-size: 1.05rem;
 }
 /* ===CAJA OFERTAS FLEXBOX=== */
 
@@ -61,27 +74,6 @@ section.oferta-container {
     width: 50%;
     height: 50%;
     margin: 1% 25%;
-}
-
-.oferta-container .caja1 {
-    width: 200px;
-    margin: 20px;
-    padding: 0 10px;
-}
-
-.oferta-container .caja1 img {
-    width: 350px;
-    height: 250px;
-    border-radius: 20px;
-    border: solid;
-}
-
-.oferta-container .caja1 p {
-    font-size: 1.6rem;
-    margin-top: -40px;
-    margin-bottom: 40px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.6rem;
 }
 
 .primera-caja {
@@ -145,6 +137,7 @@ footer  {
     border-right: solid;
     background-color: black;
     margin: 0px;
+
 }
 footer section{
     color: white;
@@ -166,8 +159,10 @@ p{
     margin:20px 20px;
 }
 /*Comienza la sección Ofertas*/
-@media (max-width: 768px) {
-    .caja-ofertas{
+.hamburguesa{
+    display: none;
+}
+.caja-ofertas{
         margin: 50px 20px;
         border: solid; 
         width: 250px;
@@ -175,26 +170,12 @@ p{
         box-sizing: border-box; 
         display: flex; flex-direction: row;
         border-radius: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
-    nav ul li{
-        margin-right: 3%;
-    }
-    footer section{
-        margin: 2%;
-    }
-    footer section b{
-    
-    }
-}
 
-@media (min-width: 1200px){
-
-}
 .titulo-ofertas{
     font-family: 'Russo One', sans-serif;
     font-size: 1.6rem;
+    color: black;
     margin-left: 5px;
     top: -23%;
     left: 10%;
@@ -209,6 +190,21 @@ p{
 }
 .sec-ofer-3{
     display: flex; flex-direction: row;
+}
+#carouselExampleCaptions{
+    display: none;
+}
+#carouselExampleCaptions2{
+    display: none;
+}
+#carouselExampleCaptions3{
+    display: none;
+}
+.carousel-indicators{
+    display: none;
+}
+.carousel-item{
+    display: none;
 }
 
 /*Comienza la sección Catálogo*/
@@ -249,4 +245,192 @@ h3 div p{
 }
 .div-ayuda{
     margin-bottom: 25px;
+}
+/* Diseño Responsive */
+@media (min-width:320px) and (max-width:480px) {
+    /* Index */
+    #icono{
+        width: 20%;
+        height: 5%;
+    }
+    header div {
+        width: 100%;
+        color: black;
+    }
+    .container-fluid{
+        background-image: none;
+        color: black;
+    }
+    }
+    .collapse{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+    header nav{
+        display: none;
+    }
+    #navbarToggleExternalContent{
+        color: black;
+    }
+    .titulo{
+        font-size: 2rem;
+        margin: 5%;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: 80%;
+    }
+    #carouselExampleIndicators{
+        width: 100%;
+    }
+    .boton{
+        margin: 1.2%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        display: block
+    }
+    footer section{
+        margin-left:  6%;
+        margin-top: 2%;
+    }
+    footer section b{
+        font-size: 0.9rem;
+        margin-top: 10%;
+        text-align: center;
+    }
+    footer section ul{
+        margin-left: -30%;
+    }
+    footer section ul li{
+        font-size: 0.8rem;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 3%;
+    }
+    /* Sección Ofertas */
+    .caja-ofertas{
+        width: 80%;
+        display: none;
+    }
+    .titulo-ofertas{
+        font-size: 100%;
+        color: black;
+        margin-left: 15%;
+        margin-bottom: 10%;
+        display: none;
+    }
+    #carouselExampleCaptions{
+        display: flex;
+    }
+    #carouselExampleCaptions2{
+        display: flex;
+    }
+    #carouselExampleCaptions3{
+        display: flex;
+    }
+    .carousel-item{
+        width: 50%;
+        height: 50%;
+        margin: 3% 5%;
+    }
+    .carousel-indicators{
+        width: 30%;
+        height: 10%;
+        color: black;
+    }
+    .carousel-control-prev-icon{
+        color: brown;
+    }
+    .carousel-control-next-icon{
+        color: black;
+    }
+    .boton-carrusel{
+        width: 5%;
+    }
+    .boton-carrusel-prev{
+        color: black;
+    }
+    .boton-carrusel-next{
+        color: black;
+    }
+
+@media (min-width:768px) and (max-width:1024px){
+header nav{
+    display: none;
+}
+.container-fluid{
+    background-image: none;
+}
+}
+@media (min-width:1200px) and (max-width:1440px) {
+    .collapse{
+        display: none;
+    }
+    .hamburguesa{
+        display: none;}
+        header nav{
+            display: flex;
+            width: 100%;
+        }
+        nav ul{
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        nav ul li{
+        
+            background-color: black;
+            font-size: 1.05rem;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 1.05rem;
+        
+        }
+    .navbar{
+        display: none;
+    }
+    #carouselExampleCaptions{
+        display: none;
+    }
+    #carouselExampleCaptions2{
+        display: none;
+    }
+    #carouselExampleCaptions3{
+        display: none;
+    }
+    .caja-ofertas{
+        display: flex;
+        width: 70%
+    }
+    .titulo-ofertas{
+        display: flex;
+        font-size: 1.5rem;
+        margin-left: 3%;
+    }
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

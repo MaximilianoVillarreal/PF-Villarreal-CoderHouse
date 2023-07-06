@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <div><img src="./img/logo.ico" alt="" id="icono" /></div>
+      <div class="portada"><img src="./img/logo.ico" alt="" id="icono" /></div>
       <nav>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
@@ -27,38 +27,33 @@
           <li><a href="./pages/ayuda.html">Ayuda</a></li>
         </ul>
       </nav>
-    </header>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4">
+            <h5 class="text-body-emphasis h4">Barra de navegación</h5>
+            <span class="text-body-secondary">
+              <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/ofertas.html">Ofertas</a></li>
+                <li><a href="./pages/catalogo.html">Catálogo</a></li>
+                <li><a href="./pages/misviajes.html">Mis viajes</a></li>
+                <li><a href="./pages/ayuda.html">Ayuda</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
     <main>
       <section>
         <h2 class="titulos-2">Ofertas</h2>
         <form action=""></form>
       </section>
-      <!-- <section class="oferta-container">
-        <div class="caja1 primera-caja">
-          <img
-            src="./img/guia-viaje-miami.jpg"
-            alt="Miami"
-            title="Miami"
-          />
-          <p>Miami</p>
-        </div>
-        <div class="caja1">
-          <img
-            src="./img/thingstodoinmadrid-1-1.jpg"
-            alt="Madrid"
-            title="Madrid"
-          />
-          <p>Madrid</p>
-        </div>
-        <div class="caja1">
-          <img
-            src="./img/cancún.jpg"
-            alt="Cancún"
-            title="Cancún"
-          />
-          <p>Cancún</p>
-        </div>
-      </section> -->
       <section class="oferta-container">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -67,13 +62,13 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" class="caja1">
+          <div class="carousel-item active">
             <img src="./img/guia-viaje-miami.jpg" class="d-block w-100" alt="Miami">
           </div>
-          <div class="carousel-item" class="caja1">
+          <div class="carousel-item">
             <img src="./img/thingstodoinmadrid-1-1.jpg" class="d-block w-100" alt="Madrid">
           </div>
-          <div class="carousel-item" class="caja1">
+          <div class="carousel-item">
             <img src="./img/cancún.jpg" class="d-block w-100" alt="Cancún">
           </div>
         </div>
@@ -133,40 +128,42 @@
       </section>
     </main>
     <footer>
-      <section>
-          <b>Hoteles</b>
-          <ul>
-            <li><a href="">Hoteles en Bariloche</a></li>
-            <li><a href="">Hoteles en Miami</a></li>
-            <li><a href="">Hoteles en Cancún</a></li>
-            <li><a href="">Hoteles en Punta del Este</a></li>
-            <li><a href="">Hoteles en Madrid</a></li>
-          </ul>
-      </section>
-      <section>
-          <b>Somos TravelPlus</b>
-          <ul>
-            <li><a href="">Sobre TravelPlus</a></li>
-            <li><a href="">Preguntas frecuentes</a></li>
-            <li><a href="">Trabaja en TravelPlus</a></li>
-          </ul>
-      </section>
-      <section>
-          <b>Mi cuenta</b>
-          <ul>
-            <li><a href="">Mis viajes</a></li>
-            <li><a href="">Buscar reservas</a></li>
-            <li><a href="">Planeá tu viaje</a></li>
-            <li><a href="">Pasaporte TravelPlus</a></li>
-          </ul>
-      </section>
-      <section>
-          <b>Canales de atención</b>
-          <ul>
-            <li><a href="">080-898-444</a></li>
-            <li><a href="">travelplus@gmail.com</a></li>
-          </ul>
-      </section>
+      <div class="footer1">
+        <section>
+            <b>Hoteles</b>
+            <ul>
+              <li><a href="">Hoteles en Bariloche</a></li>
+              <li><a href="">Hoteles en Miami</a></li>
+              <li><a href="">Hoteles en Cancún</a></li>
+              <li><a href="">Hoteles en Punta del Este</a></li>
+              <li><a href="">Hoteles en Madrid</a></li>
+            </ul>
+        </section>
+        <section>
+            <b>Somos TravelPlus</b>
+            <ul>
+              <li><a href="">Sobre TravelPlus</a></li>
+              <li><a href="">Preguntas frecuentes</a></li>
+              <li><a href="">Trabaja en TravelPlus</a></li>
+            </ul>
+        </section>
+        <section>
+            <b>Mi cuenta</b>
+            <ul>
+              <li><a href="">Mis viajes</a></li>
+              <li><a href="">Buscar reservas</a></li>
+              <li><a href="">Planeá tu viaje</a></li>
+              <li><a href="">Pasaporte TravelPlus</a></li>
+            </ul>
+        </section>
+        <section>
+            <b>Canales de atención</b>
+            <ul>
+              <li><a href="">080-898-444</a></li>
+              <li><a href="">travelplus@gmail.com</a></li>
+            </ul>
+        </section>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
