@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
-    <title>TravelPlus</title>
+    <title>TravelPlus - Catálogo</title>
     <link rel="icon" href="../img/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,98 +27,358 @@
                 <li><a href="../pages/ayuda.html">Ayuda</a></li>
             </ul>
         </nav>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+            <h5 class="text-body-emphasis h4">Barra de navegación</h5>
+                <span class="text-body-secondary">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                        <li><a href="../pages/catalogo.html">Catálogo</a></li>
+                        <li><a href="../pages/misviajes.html">Mis viajes</a></li>
+                        <li><a href="../pages/ayuda.html">Ayuda</a></li>
+                    </ul>
+                </span>
+        </div>
+    </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
     <main class="col">
         <h2 class="titulo">¿Estás buscando un destino pero aún no te decidís?</h2>
         <h3 class="h3-catalogo">Destinos más buscados
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/bariloche.jpg" alt="Bariloche"><p>Bariloche</p>
-                    <img class="catalogo-item" src="../img/cancún.jpg" alt="Cancún"><p>Cancún</p>
-                    <img class="catalogo-item" src="../img/río-de-janeiro.jpg" alt="Río de Janeiro"><p>Río de Janeiro</p>
-                    <img class="catalogo-item" src="../img/guia-viaje-miami.jpg" alt="Miami"><p>Miami</p>
-                    <img class="catalogo-item" src="../img/thingstodoinmadrid-1-1.jpg" alt="Madrid"><p>Madrid</p>
+                    <img class="catalogo-item" src="../img/bariloche.jpg" alt="Bariloche" title="Bariloche"><p>Bariloche</p>
+                    <img class="catalogo-item" src="../img/cancún.jpg" alt="Cancún" title="Cancún"><p>Cancún</p>
+                    <img class="catalogo-item" src="../img/río-de-janeiro.jpg" alt="Río de Janeiro" title="Río de Janeiro"><p>Río de Janeiro</p>
+                    <img class="catalogo-item" src="../img/guia-viaje-miami.jpg" alt="Miami" title="Miami"><p>Miami</p>
+                    <img class="catalogo-item" src="../img/thingstodoinmadrid-1-1.jpg" alt="Madrid" title="Madrid"><p>Madrid</p>
                 </div>
             </section>
+            <div id="carouselExampleIndicators-c" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bariloche.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cancún.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/río-de-janeiro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/guia-viaje-miami.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/thingstodoinmadrid-1-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             <hr>
         </h3>
         <h3 class="h3-catalogo">Destinos en Argentina
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/mendoza.jpg" alt="Mendoza"><p>Mendoza</p>
-                    <img class="catalogo-item" src="../img/misiones.jpg" alt="Misiones"><p>Misiones</p>
-                    <img class="catalogo-item" src="../img/buenos-aires.jpg" alt="Buenos Aires"><p>Buenos Aires</p>
-                    <img class="catalogo-item" src="../img/bariloche.jpg" alt="Bariloche"><p>Bariloche</p>
-                    <img class="catalogo-item" src="../img/cordoba.jpg" alt="Córdoba"><p>Córdoba</p>
+                    <img class="catalogo-item" src="../img/mendoza.jpg" alt="Mendoza" title="Mendoza"><p>Mendoza</p>
+                    <img class="catalogo-item" src="../img/misiones.jpg" alt="Misiones" title="Misiones"><p>Misiones</p>
+                    <img class="catalogo-item" src="../img/buenos-aires.jpg" alt="Buenos Aires" title="Buenos Aires"><p>Buenos Aires</p>
+                    <img class="catalogo-item" src="../img/bariloche.jpg" alt="Bariloche" title="Bariloche"><p>Bariloche</p>
+                    <img class="catalogo-item" src="../img/cordoba.jpg" alt="Córdoba" title="Córdoba"><p>Córdoba</p>
                 </div>
             </section>
+            <div id="carouselExampleIndicators-c2" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/mendoza.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/misiones.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/buenos-aires.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/bariloche.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cordoba.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             <hr>
         </h3>
         <h3 class="h3-catalogo">Destinos en América
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">   
-                    <img class="catalogo-item" src="../img/punta-del-este.jpg" alt="Punta del Este"><p>Punta del Este</p>
-                    <img class="catalogo-item" src="../img/new-york.jpg" alt="New York"><p>New York</p>
-                    <img class="catalogo-item" src="../img/bogota.jpg" alt="Bogotá"><p>Bogotá</p>
-                    <img class="catalogo-item" src="../img/ciudad-de-mexico.webp" alt="Ciudad de México"><p>Ciudad de México</p>
-                    <img class="catalogo-item" src="../img/santiago-de-chile.jpg" alt="Santiago de Chile"><p>Santiago de Chile</p>
+                    <img class="catalogo-item" src="../img/punta-del-este.jpg" alt="Punta del Este" title="Punta del Este"><p>Punta del Este</p>
+                    <img class="catalogo-item" src="../img/new-york.jpg" alt="New York" title="New York"><p>New York</p>
+                    <img class="catalogo-item" src="../img/bogota.jpg" alt="Bogotá" title="Bogotá"><p>Bogotá</p>
+                    <img class="catalogo-item" src="../img/ciudad-de-mexico.webp" alt="Ciudad de México" title="Ciudad de México"><p>Ciudad de México</p>
+                    <img class="catalogo-item" src="../img/santiago-de-chile.jpg" alt="Santiago de Chile" title="Santiago de Chile"><p>Santiago de Chile</p>
                 </div>
         </section>
+            <div id="carouselExampleIndicators-c3" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/punta-del-este.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/new-york.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/bogota.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/ciudad-de-mexico.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/santiago-de-chile.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             <hr>        
         </h3>
         <h3 class="h3-catalogo">Destinos en Europa
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/roma.jpg" alt="Roma"><p>Roma</p>
-                    <img class="catalogo-item" src="../img/parís.jpg" alt="París"><p>París</p>
-                    <img class="catalogo-item" src="../img/thingstodoinmadrid-1-1.jpg" alt="Madrid"><p>Madrid</p>
-                    <img class="catalogo-item" src="../img/lisboa.jpg" alt="Lisboa"><p>Lisboa</p>
-                    <img class="catalogo-item" src="../img/londres.jpg" alt="Londres"><p>Londres</p>
+                    <img class="catalogo-item" src="../img/roma.jpg" alt="Roma" title="Roma"><p>Roma</p>
+                    <img class="catalogo-item" src="../img/parís.jpg" alt="París" title="París"><p>París</p>
+                    <img class="catalogo-item" src="../img/thingstodoinmadrid-1-1.jpg" alt="Madrid" title="Madrid"><p>Madrid</p>
+                    <img class="catalogo-item" src="../img/lisboa.jpg" alt="Lisboa" title="Lisboa"><p>Lisboa</p>
+                    <img class="catalogo-item" src="../img/londres.jpg" alt="Londres" title="Londres"><p>Londres</p>
                 </div>
         </section>
+        <div id="carouselExampleIndicators-c4" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/roma.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/parís.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/thingstodoinmadrid-1-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/lisboa.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/londres.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <hr>
         </h3>
         <h3 class="h3-catalogo">Destinos en Asia
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/tokio.jpg" alt="Tokio"><p>Tokio</p>
-                    <img class="catalogo-item" src="../img/tai-pei.jpg" alt="Tai Pei"><p>Tai Pei</p>
-                    <img class="catalogo-item" src="../img/hong-kong.jpg" alt="Hong Kong"><p>Hong Kong</p>
-                    <img class="catalogo-item" src="../img/doha.jpg" alt="Doha"><p>Doha</p>
-                    <img class="catalogo-item" src="../img/moscu.jpg" alt="Moscú"><p>Moscú</p>
+                    <img class="catalogo-item" src="../img/tokio.jpg" alt="Tokio" title="Tokio"><p>Tokio</p>
+                    <img class="catalogo-item" src="../img/tai-pei.jpg" alt="Tai Pei" title="Tai Pei"><p>Tai Pei</p>
+                    <img class="catalogo-item" src="../img/hong-kong.jpg" alt="Hong Kong" title="Hong Kong"><p>Hong Kong</p>
+                    <img class="catalogo-item" src="../img/doha.jpg" alt="Doha" title="Doha"><p>Doha</p>
+                    <img class="catalogo-item" src="../img/moscu.jpg" alt="Moscú" title="Moscú"><p>Moscú</p>
                 </div>
             </section>
+            <div id="carouselExampleIndicators-c5" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/tokio.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/tai-pei.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/hong-kong.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/doha.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/moscu.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             <hr>
         </h3>
         <h3 class="h3-catalogo">Destinos en Oceanía
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/sídney.jpg" alt="Sídney"><p>Sídney</p>
-                    <img class="catalogo-item" src="../img/islas-fiyi.jpg" alt="Islas Fiyi"><p>Islas Fiyi</p>
-                    <img class="catalogo-item" src="../img/tahití.jpg" alt="Tahití"><p>Tahití</p>
-                    <img class="catalogo-item" src="../img/isla-stewart.jpg" alt="Isla de Stewart"><p>Isla de Stewart</p>
-                    <img class="catalogo-item" src="../img/wellington.jpg" alt="Wellington"><p>Wellington</p>
+                    <img class="catalogo-item" src="../img/sídney.jpg" alt="Sídney" title="Sídney"><p>Sídney</p>
+                    <img class="catalogo-item" src="../img/islas-fiyi.jpg" alt="Islas Fiyi" title="Islas Fiyi"><p>Islas Fiyi</p>
+                    <img class="catalogo-item" src="../img/tahití.jpg" alt="Tahití" title="Tahití"><p>Tahití</p>
+                    <img class="catalogo-item" src="../img/isla-stewart.jpg" alt="Isla de Stewart" title="Isla de Stewart"><p>Isla de Stewart</p>
+                    <img class="catalogo-item" src="../img/wellington.jpg" alt="Wellington" title="Wellington"><p>Wellington</p>
             </div>
             </section>
+            <div id="carouselExampleIndicators-c6" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/sídney.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/islas-fiyi.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/tahití.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/isla-stewart.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/wellington.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             <hr>
         </h3>
         <h3 class="h3-catalogo">Destinos en África
             <hr class="hr-bn">
-            <section>
+            <section class="section-catalogo">
                 <div class="div-catalogo">
-                    <img class="catalogo-item" src="../img/ciudad-del-cabo.jpg" alt="Ciudad del Cabo"><p>Ciudad del Cabo</p>
-                    <img class="catalogo-item" src="../img/el-cairo.jpg" alt="El Cairo"><p>El Cairo</p>
-                    <img class="catalogo-item" src="../img/nairobi.jpg" alt="Nairobi"><p>Nairobi</p>
-                    <img class="catalogo-item" src="../img/luanda.jpg" alt="Luanda"><p>Luanda</p>
-                    <img class="catalogo-item" src="../img/túnez.jpg" alt="Túnez"><p>Túnez</p>
+                    <img class="catalogo-item" src="../img/ciudad-del-cabo.jpg" alt="Ciudad del Cabo" title="Ciudad del Cabo"><p>Ciudad del Cabo</p>
+                    <img class="catalogo-item" src="../img/el-cairo.jpg" alt="El Cairo" title="El Cairo"><p>El Cairo</p>
+                    <img class="catalogo-item" src="../img/nairobi.jpg" alt="Nairobi" title="Nairobi"><p>Nairobi</p>
+                    <img class="catalogo-item" src="../img/luanda.jpg" alt="Luanda" title="Luanda"><p>Luanda</p>
+                    <img class="catalogo-item" src="../img/túnez.jpg" alt="Túnez" title="Túnez"><p>Túnez</p>
                 </div>
             </section>
+            <div id="carouselExampleIndicators-c7" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/ciudad-del-cabo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/el-cairo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/nairobi.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/luanda.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/túnez.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
         </h3>
     </main>
     <footer>
@@ -153,7 +413,7 @@
             <section>
                 <b>Canales de atención</b>
                 <ul>
-                    <li><a href="">080-898-444</a></li>
+                    <li><a href="">0800-898-444</a></li>
                     <li><a href="">travelplus@gmail.com</a></li>
                 </ul>
             </section>
