@@ -1,524 +1,632 @@
+@charset "UTF-8";
 /* ====RESET==== */
 * {
-margin: 0;
-padding: 0;
-font-family:'Rajdhani', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rajdhani", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-ul,ol {
-    list-style: none;
+ul, ol {
+  list-style: none;
 }
-img{
-    max-width: 100%;
+
+img {
+  max-width: 100%;
 }
+
 /*Comienza la sección index*/
+header nav {
+  background: linear-gradient(to bottom, orange, black);
+}
 
-#icono{ 
-    width: 150px; height: 150px;
-    display: flex;
-    opacity: 80%;
+main {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/15226638_v660-mon-04-travelbadge.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.portada{
-    background-image:url(../img/portada.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+main section .titulos-2 {
+  font-size: 2.5rem;
+  padding: 20px 0;
+  margin-left: 10px;
 }
-header div{
+main #preguntas-frecuentes {
+  margin-bottom: 100px;
+}
+main #preguntas-frecuentes .titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+main .oferta-container {
+  width: 50%;
+  height: 50%;
+  margin: 1% 25%;
+}
+main .primera-caja {
+  margin-left: 5px;
+}
+main .section-index {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+main #preguntas-frecuentes .titulos-preguntas {
+  margin-left: 35px;
+}
+main #preguntas-frecuentes .p-preguntas {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+main #preguntas-frecuentes .opciones-compra {
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+main #preguntas-frecuentes .opciones-pago {
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+main article {
+  display: flex;
+  flex-direction: row;
+}
+main hr {
+  border: solid 2px;
+  color: black;
+}
+main h3 img {
+  display: inline-block;
+}
+main .hr-bn {
+  border: none;
+}
+
+footer {
+  background: linear-gradient(to bottom, orange, black);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Index */
+  header #icono {
+    width: 20%;
+    height: 5%;
+  }
+  header div {
+    width: 100%;
     color: black;
-    background-color:rgb(0, 0, 0); 
-    margin-bottom: 0px;
-    border: solid;
-    border-bottom: solid;
-}
-.navbar{
+  }
+  header .container-fluid {
+    background-image: none;
+    color: black;
+  }
+  header .collapse {
+    width: 100%;
+  }
+  header .navbar {
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+  header nav {
     display: none;
+  }
+  header #navbarToggleExternalContent {
+    color: black;
+  }
+  header .titulo {
+    font-size: 2rem;
+    margin: 5%;
+  }
+  header .carousel-inner {
+    width: 100%;
+    height: 80%;
+  }
+  header #carouselExampleIndicators {
+    width: 100%;
+  }
+  header .boton {
+    margin: 1.2%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    display: block;
+  }
+  footer section {
+    margin-left: 26%;
+    margin-top: 2%;
+  }
+  footer section b {
+    font-size: 0.9rem;
+    margin-top: 10%;
+    text-align: center;
+  }
+  footer section ul {
+    margin-left: -30%;
+  }
+  footer section ul li {
+    font-size: 0.8rem;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
-.titulos-2{ 
-    font-size: 2.5rem;
-    padding: 20px 0;
-    margin-left: 10px;
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header nav .container-fluid {
+    background-image: none;
+  }
+  header nav .boton-planea {
+    margin-left: 40%;
+  }
 }
-.titulo{
-    text-align: center;  
-    font-size: 2.5rem;
-    margin-top: 15px;
-}
-header nav{
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header .collapse {
+    display: none;
+  }
+  header .hamburguesa {
+    display: none;
+  }
+  header nav {
     display: flex;
     width: 100%;
-}
-nav ul{
+  }
+  header nav ul {
     background-color: black;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 40px;
-}
-nav ul li{
+  }
+  header nav ul li {
     background-color: black;
     font-size: 1.05rem;
-    margin-top: 5px;
-}
-nav ul li a{
+  }
+  header nav ul li a {
     color: white;
     font-size: 1.05rem;
-}
-/* ===CAJA OFERTAS FLEXBOX=== */
-
-section.oferta-container {
-    width: 50%;
-    height: 50%;
-    margin: 1% 25%;
-}
-
-.primera-caja {
-    margin-left: 5px;
-}
-.section-index{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    text-align: center;
-}
-.selector{ 
-    width: 125px; 
-    display: inline-block;
-    margin-top: 5px;
-
-}
-.input{
-    width: 125px; 
-    display: inline-block; 
-    margin-top: 5px;
-}
-.boton{
-    display: inline-block; 
-    margin-top: 5px;
-    color: brown;
-}
-#input{
-    margin-top: 5px;
-}
-#preguntas-frecuentes{
-    margin-bottom: 100px;
-}
-.titulos-preguntas{
-    margin-left: 35px;
-}
-.p-preguntas{
-    margin-left: 10px;
-    font-size: 1.4rem;
-
-}
-.opciones-compra{
-    font-size: 1.4rem;
-    margin-left: 10px;
-}
-.opciones-pago{
-    font-size: 1.4rem;
-    margin-left: 10px;
-}
-main{
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../img/15226638_v660-mon-04-travelbadge.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-}
-article{
-    display: flex; flex-direction: row;
-}
-hr{
-    border: solid 2px;
-    color: black;
-}
-h3 img{
-    display: inline-block;
-}
-.hr-bn{
-    border: none;
-}
-.form{
-    text-align: center;
-}
-footer  {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding-bottom: 20px;
-    border-left: solid;
-    border-right: solid;
-    background-color: black;
-    margin: 0px;
-    width: 100%;
-
-}
-footer section{
-    color: white;
-    display: inline-block; 
-    margin: 0px 70px;
-    margin-bottom: 0px; 
-    text-align: start;
-}
-footer section b{
-    color: blue;
-}
-footer section ul li{
-    color: white;
-}
-footer a:link:hover{
-    color: white;
-}
-p{
-    margin:20px 20px;
+  }
+  header .navbar {
+    display: none;
+  }
 }
 /*Comienza la sección Ofertas*/
-.hamburguesa{
-    display: none;
+header .hamburguesa {
+  display: none;
 }
-.caja-ofertas{
-        margin: 50px 20px;
-        border: solid; 
-        width: 250px;
-        height: 250px; 
-        display: flex; flex-direction: row;
-        border-radius: 20px;
-    }
 
-.titulo-ofertas{
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.6rem;
+main section .sec-ofer-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main section .sec-ofer-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main section .sec-ofer-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main section div .caja-ofertas {
+  margin: 50px 20px;
+  border: solid;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+main section div .titulo-ofertas {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.6rem;
+  color: black;
+  margin-left: 5px;
+  top: -23%;
+  left: 10%;
+  margin-top: 0%;
+  position: relative;
+}
+main section div #carouselExampleCaptions {
+  display: none;
+}
+main section div #carouselExampleCaptions2 {
+  display: none;
+}
+main section div #carouselExampleCaptions3 {
+  display: none;
+}
+main section div .carousel-indicators {
+  display: none;
+}
+main section div .carousel-item {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Ofertas */
+  main section div .caja-ofertas {
+    width: 80%;
+    display: none;
+  }
+  main section div .titulo-ofertas {
+    font-size: 100%;
     color: black;
-    margin-left: 5px;
-    top: -23%;
-    left: 10%;
-    margin-top: 0%;
-    position: relative;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    display: none;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions {
+    display: flex;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions2 {
+    display: flex;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions3 {
+    display: flex;
+  }
+  main section div .titulo-ofertas .carousel-item {
+    width: 50%;
+    height: 50%;
+    margin: 3% 5%;
+  }
+  main section div .titulo-ofertas .carousel-indicators {
+    width: 30%;
+    height: 10%;
+    color: black;
+  }
+  main section div .titulo-ofertas .carousel-control-prev-icon {
+    color: brown;
+  }
+  main section div .titulo-ofertas .carousel-control-next-icon {
+    color: black;
+  }
+  main section div .titulo-ofertas .boton-carrusel {
+    width: 5%;
+  }
+  main section div .titulo-ofertas .boton-carrusel-prev {
+    color: black;
+  }
+  main section div .titulo-ofertas .boton-carrusel-next {
+    color: black;
+  }
 }
-.sec-ofer-1{
-    display: flex; flex-direction: row;
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .container-fluid {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
     width: 100%;
-}
-.sec-ofer-2{
-    display: flex; flex-direction: row;
+  }
+  main {
     width: 100%;
-}
-.sec-ofer-3{
-    display: flex; flex-direction: row;
-    width: 100%;
-}
-#carouselExampleCaptions{
+  }
+  main div #carouselExampleCaptions {
     display: none;
-}
-#carouselExampleCaptions2{
+  }
+  main div #carouselExampleCaptions2 {
     display: none;
-}
-#carouselExampleCaptions3{
+  }
+  main div #carouselExampleCaptions3 {
     display: none;
+  }
+  main div .caja-ofertas {
+    display: flex;
+    width: 70%;
+  }
+  main div .titulo-ofertas {
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 3%;
+  }
 }
-.carousel-indicators{
-    display: none;
+footer {
+  width: 100%;
 }
-.carousel-item{
-    display: none;
+footer .footer1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /*Comienza la sección Catálogo*/
-.section-catalogo{
-    width: 100%;
-    /* display: flex;
-    flex-direction: row; */
+main .h3-catalogo {
+  font-family: cursive;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
-.catalogo-item{
-    border: solid; 
-    width: 200px;
-    height: 200px;
-    /* display: flex;
-    flex-direction: row; */
-    border-radius: 20px;
-    margin-left: 15px;
-    margin-bottom: 40px;
-    margin-right: 0px;
+main h3 div p {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.6rem;
+  display: none;
 }
-.div-catalogo{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, fr);
-    margin-top: 15px;
-    width: 100%;
+main section .section-catalogo {
+  width: 100%;
+  /* display: flex;
+  flex-direction: row; */
 }
-.h3-catalogo{
-    font-family: cursive; 
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 15px;
+main section div .catalogo-item {
+  border: solid;
+  width: 200px;
+  height: 200px;
+  /* display: flex;
+  flex-direction: row; */
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  margin-right: 0px;
 }
-h3 div p{
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.6rem;
+main section div .div-catalogo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, fr);
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Diseño Responsive */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Catálogo */
+  .section-catalogo {
     display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  .container-fluid {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Sección Catálogo */
+  main section .section-catalogo {
+    display: flex;
+  }
+  main div #carouselExampleIndicators-c {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c2 {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c3 {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c4 {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c5 {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c6 {
+    display: none;
+  }
+  main div #carouselExampleIndicators-c7 {
+    display: none;
+  }
+  main div #carouselExampleIndicators {
+    display: flex;
+  }
 }
 /*Comienza la sección Mis Viajes*/
-.boton-planea{
-    margin: 2% 45%;
-    width: 160px;
-    height: 50px;
+main .boton-planea {
+  margin: 2% 45%;
+  width: 160px;
+  height: 50px;
 }
-.buscar-reservas{
-    margin-left: 15px;
+main .buscar-reservas {
+  margin-left: 15px;
 }
-.byp-misviajes{
-    font-size: 1.4rem;
+main .byp-misviajes {
+  font-size: 1.4rem;
+}
+
+/* Diseño Responsive */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Mis Viajes */
+  /* Sección Ayuda */
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .container-fluid {
+    background-image: none;
+  }
+  main .boton-planea {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  header .hamburguesa {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*Comienza la sección Ayuda*/
-#section1-ayuda{
-    text-align: left;
+main section form .div-ayuda {
+  margin-bottom: 25px;
 }
-#section2-ayuda{
-    text-align: end; text-align: justify;
+main section #section1-ayuda {
+  text-align: left;
 }
-.div-ayuda{
-    margin-bottom: 25px;
+main section #section2-ayuda {
+  text-align: end;
+  text-align: justify;
 }
-.p-preguntas2{
-    font-size: 1.3rem;
-    text-indent: 20px;
+main section .p-preguntas2 {
+  font-size: 1.3rem;
+  text-indent: 20px;
 }
-.titulos-ayuda{
-    margin-left: 5px;
+main section .titulos-ayuda {
+  margin-left: 5px;
 }
-.opciones-compra2{
-    margin-left: 15px;
-    font-size: 1.3rem;
+main section .opciones-compra2 {
+  margin-left: 15px;
+  font-size: 1.3rem;
 }
+
 /* Diseño Responsive */
-@media (min-width:320px) and (max-width:480px) {
-    /* Index */
-    #icono{
-        width: 20%;
-        height: 5%;
-    }
-    header div {
-        width: 100%;
-        color: black;
-    }
-    .container-fluid{
-        background-image: none;
-        color: black;
-    }
-    }
-    .collapse{
-        width: 100%;
-    }
-    .navbar{
-        width: 100%;
-        display: flex;
-        padding: 0;
-    }
-    header nav{
-        display: none;
-    }
-    #navbarToggleExternalContent{
-        color: black;
-    }
-    .titulo{
-        font-size: 2rem;
-        margin: 5%;
-    }
-    .carousel-inner{
-        width: 100%;
-        height: 80%;
-    }
-    #carouselExampleIndicators{
-        width: 100%;
-    }
-    .boton{
-        margin: 1.2%;
-    }
-    main{
-        width: 100%;
-    }
-    footer{
-        width: 100%;
-        display: block
-    }
-    footer section{
-        margin-left:  26%;
-        margin-top: 2%;
-    }
-    footer section b{
-        font-size: 0.9rem;
-        margin-top: 10%;
-        text-align: center;
-    }
-    footer section ul{
-        margin-left: -30%;
-    }
-    footer section ul li{
-        font-size: 0.8rem;
-    }
-    .footer1{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    /* Sección Ofertas */
-    .caja-ofertas{
-        width: 80%;
-        display: none;
-    }
-    .titulo-ofertas{
-        font-size: 100%;
-        color: black;
-        margin-left: 15%;
-        margin-bottom: 10%;
-        display: none;
-    }
-    #carouselExampleCaptions{
-        display: flex;
-    }
-    #carouselExampleCaptions2{
-        display: flex;
-    }
-    #carouselExampleCaptions3{
-        display: flex;
-    }
-    .carousel-item{
-        width: 50%;
-        height: 50%;
-        margin: 3% 5%;
-    }
-    .carousel-indicators{
-        width: 30%;
-        height: 10%;
-        color: black;
-    }
-    .carousel-control-prev-icon{
-        color: brown;
-    }
-    .carousel-control-next-icon{
-        color: black;
-    }
-    .boton-carrusel{
-        width: 5%;
-    }
-    .boton-carrusel-prev{
-        color: black;
-    }
-    .boton-carrusel-next{
-        color: black;
-    }
-/* Sección Catálogo */
-.section-catalogo{
-    display: none;
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Mis Viajes */
+  /* Sección Ayuda */
 }
-/* Sección Mis Viajes */
-
-/* Sección Ayuda */
-
-@media (min-width:600px) and (max-width:1024px){
-header nav{
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
     display: none;
-}
-.container-fluid{
+  }
+  .container-fluid {
     background-image: none;
+  }
 }
-.boton-planea{
-    margin-left: 40%;
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+header .portada {
+  background-image: url(../img/portada.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-@media (min-width:1200px) and (max-width:1440px) {
-    .collapse{
-        display: none;
-    }
-    .hamburguesa{
-        display: none;}
-        header nav{
-            display: flex;
-            width: 100%;
-        }
-        nav ul{
-            background-color: black;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-        nav ul li{
-        
-            background-color: black;
-            font-size: 1.05rem;
-        }
-        nav ul li a{
-            color: white;
-            font-size: 1.05rem;
-        
-        }
-    .navbar{
-        display: none;
-    }
-    #carouselExampleCaptions{
-        display: none;
-    }
-    #carouselExampleCaptions2{
-        display: none;
-    }
-    #carouselExampleCaptions3{
-        display: none;
-    }
-    .caja-ofertas{
-        display: flex;
-        width: 70%
-    }
-    .titulo-ofertas{
-        display: flex;
-        font-size: 1.5rem;
-        margin-left: 3%;
-    }
-    header{
-        width: 100%;
-    }
-    main{
-        width: 100%;
-    }
-    footer{
-        width: 100%;
-    }
-    .footer1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    /* Sección Catálogo */
-    #carouselExampleIndicators-c{
-        display: none;
-    }
-    #carouselExampleIndicators-c2{
-        display: none;
-    }
-    #carouselExampleIndicators-c3{
-        display: none;
-    }
-    #carouselExampleIndicators-c4{
-        display: none;
-    }
-    #carouselExampleIndicators-c5{
-        display: none;
-    }
-    #carouselExampleIndicators-c6{
-        display: none;
-    }
-    #carouselExampleIndicators-c7{
-        display: none;
-    }
-    #carouselExampleIndicators{
-        display: flex;
-    }
-    .section-catalogo{
-        display: flex;
-    }
+header #icono {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  opacity: 80%;
 }
+header div {
+  color: black;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+  border: solid;
+  border-bottom: solid;
+}
+header nav {
+  display: flex;
+  width: 100%;
+}
+header nav ul {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+}
+header nav ul li {
+  background-color: black;
+  font-size: 1.05rem;
+  margin-top: 5px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 1.05rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-bottom: 20px;
+  border-left: solid;
+  border-right: solid;
+  background-color: black;
+  margin: 0px;
+  width: 100%;
+}
+footer section {
+  color: white;
+  display: inline-block;
+  margin: 0px 70px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+footer section b {
+  color: blue;
+}
+footer section ul li {
+  color: white;
+}
+footer section a:link:hover {
+  color: white;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 5px;
+  color: brown;
+}
+
+.input {
+  width: 125px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#input {
+  margin-top: 5px;
+}
+
+.selector {
+  width: 125px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

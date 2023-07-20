@@ -1,0 +1,108 @@
+/*Comienza la sección Catálogo*/
+main{
+    .h3-catalogo{
+        font-family: cursive; 
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    h3 div p{
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.6rem;
+        display: none;
+    }
+    section{
+        .section-catalogo{
+            width: 100%;
+            /* display: flex;
+            flex-direction: row; */
+        }
+    div{
+        .catalogo-item{
+            border: solid; 
+            width: 200px;
+            height: 200px;
+            /* display: flex;
+            flex-direction: row; */
+            border-radius: 20px;
+            margin-left: 15px;
+            margin-bottom: 40px;
+            margin-right: 0px;
+        }
+        .div-catalogo{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, fr);
+            margin-top: 15px;
+            width: 100%;
+            }
+        }
+    }
+}
+
+/* Diseño Responsive */
+@media (min-width:320px) and (max-width:480px) {
+    /* Sección Catálogo */
+    .section-catalogo{
+        display: none;
+    }
+}
+@media (min-width:600px) and (max-width:1024px){
+    header nav{
+        display: none;
+    }
+    .container-fluid{
+        background-image: none;
+    }
+}
+@media (min-width:1200px) and (max-width:1440px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+/* Sección Catálogo */
+main{
+    section{
+        .section-catalogo{
+            display: flex;
+        }
+    }
+    div{
+        #carouselExampleIndicators-c{
+            display: none;
+        }
+        #carouselExampleIndicators-c2{
+            display: none;
+        }
+        #carouselExampleIndicators-c3{
+            display: none;
+        }
+        #carouselExampleIndicators-c4{
+            display: none;
+        }
+        #carouselExampleIndicators-c5{
+            display: none;
+        }
+        #carouselExampleIndicators-c6{
+            display: none;
+        }
+        #carouselExampleIndicators-c7{
+            display: none;
+        }
+        #carouselExampleIndicators{
+            display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*Comienza la sección Mis Viajes*/
+main{
+    .boton-planea{
+        margin: 2% 45%;
+        width: 160px;
+        height: 50px;
+    }
+    .buscar-reservas{
+        margin-left: 15px;
+    }
+    .byp-misviajes{
+        font-size: 1.4rem;
+    }
+}
+/* Diseño Responsive */
+@media (min-width:320px) and (max-width:480px) {
+
+    /* Sección Mis Viajes */
+    
+    /* Sección Ayuda */
+}
+@media (min-width:600px) and (max-width:1024px){
+    header{
+        nav{
+            display: none;
+        }
+        .container-fluid{
+            background-image: none;
+        }
+    }
+    main{
+        .boton-planea{
+            margin-left: 40%;
+        }
+    }
+}
+@media (min-width:1200px) and (max-width:1440px) {
+    
+        header{
+            width: 100%;
+            .hamburguesa{
+                display: none;
+            }
+        }
+        main{
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+            .footer1{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+}

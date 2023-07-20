@@ -1,0 +1,62 @@
+
+/*Comienza la sección Ayuda*/
+main{
+    section{
+        form{
+            .div-ayuda{
+                margin-bottom: 25px;
+            }
+        }
+        #section1-ayuda{
+            text-align: left;
+        }
+        #section2-ayuda{
+            text-align: end; text-align: justify;
+        }
+        
+        .p-preguntas2{
+            font-size: 1.3rem;
+            text-indent: 20px;
+        }
+        .titulos-ayuda{
+            margin-left: 5px;
+        }
+        .opciones-compra2{
+            margin-left: 15px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+/* Diseño Responsive */
+@media (min-width:320px) and (max-width:480px) {
+
+/* Sección Mis Viajes */
+
+/* Sección Ayuda */
+}
+@media (min-width:600px) and (max-width:1024px){
+header nav{
+    display: none;
+}
+.container-fluid{
+    background-image: none;
+}
+}
+
+@media (min-width:1200px) and (max-width:1440px) {
+
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

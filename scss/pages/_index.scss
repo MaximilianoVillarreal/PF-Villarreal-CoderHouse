@@ -1,0 +1,191 @@
+/*Comienza la sección index*/
+header{
+    nav {
+        @include estilo-titulos;
+    }
+}
+main{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../img/15226638_v660-mon-04-travelbadge.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    section{
+        .titulos-2{ 
+            font-size: 2.5rem;
+            padding: 20px 0;
+            margin-left: 10px;
+        }
+    }
+    #preguntas-frecuentes{
+        margin-bottom: 100px;
+        .titulo{
+            text-align: center;  
+            font-size: 2.5rem;
+            margin-top: 15px;
+        }
+    }
+    
+    // CAJA OFERTAS FLEXBOX 
+    .oferta-container{
+        width: 50%;
+        height: 50%;
+        margin: 1% 25%;
+    }
+    .primera-caja {
+        margin-left: 5px;
+    }
+    .section-index{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    #preguntas-frecuentes{
+        .titulos-preguntas{
+            margin-left: 35px;
+        }
+        .p-preguntas{
+            margin-left: 10px;
+            font-size: 1.4rem;
+        
+        }
+        .opciones-compra{
+            font-size: 1.4rem;
+            margin-left: 10px;
+        }
+        .opciones-pago{
+            font-size: 1.4rem;
+            margin-left: 10px;
+        }
+    }
+    article{
+        display: flex; flex-direction: row;
+    }
+    hr{
+        border: solid 2px;
+        color: black;
+    }
+    h3 img{
+        display: inline-block;
+    }
+    .hr-bn{
+        border: none;
+    }
+}
+footer{
+    @include estilo-titulos;
+}
+@media (min-width:320px) and (max-width:480px) {
+    /* Index */
+    header{
+        #icono{
+            width: 20%;
+            height: 5%;
+        }
+        div {
+            width: 100%;
+            color: black;
+        }
+        .container-fluid{
+            background-image: none;
+            color: black;
+        }
+        .collapse{
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            padding: 0;
+        }
+        nav{
+            display: none;
+        }
+        #navbarToggleExternalContent{
+            color: black;
+        }
+        .titulo{
+            font-size: 2rem;
+            margin: 5%;
+        }
+        .carousel-inner{
+            width: 100%;
+            height: 80%;
+        }
+        #carouselExampleIndicators{
+            width: 100%;
+        }
+        .boton{
+            margin: 1.2%;
+        }
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        display: block;
+        section{
+            margin-left:  26%;
+            margin-top: 2%;
+        }
+        section b{
+            font-size: 0.9rem;
+            margin-top: 10%;
+            text-align: center;
+        }
+        section ul{
+            margin-left: -30%;
+        }
+        section ul li{
+            font-size: 0.8rem;
+        }
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+@media (min-width:600px) and (max-width:1024px){
+    header nav{
+        display: none;
+        .container-fluid{
+            background-image: none;
+        }
+        .boton-planea{
+            margin-left: 40%;
+            }
+        }   
+    }
+    @media (min-width:1200px) and (max-width:1440px) {
+        header{
+            .collapse{
+                display: none;
+            }
+            .hamburguesa{
+                display: none;}
+            nav{
+                    display: flex;
+                    width: 100%;
+                }
+            nav ul{
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                }
+            nav ul li{
+                
+                    background-color: black;
+                    font-size: 1.05rem;
+                }
+            nav ul li a{
+                    color: white;
+                    font-size: 1.05rem;
+                
+                }
+            .navbar{
+                display: none;
+            }
+        }
+    }
