@@ -1,0 +1,421 @@
+// Responsive Index
+@media (min-width:320px) and (max-width:480px) {
+    /* Index */
+    header{
+        #icono{
+            width: 20%;
+            height: 5%;
+        }
+        div {
+            width: 100%;
+            color: black;
+        }
+        .container-fluid{
+            background-image: none;
+            color: black;
+        }
+        .collapse{
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            padding: 0;
+        }
+        nav{
+            display: none;
+        }
+        #navbarToggleExternalContent{
+            color: black;
+        }
+        .titulo{
+            font-size: 2rem;
+            margin: 5%;
+        }
+        .carousel-inner{
+            width: 100%;
+            height: 80%;
+        }
+        #carouselExampleIndicators{
+            width: 100%;
+        }
+        .boton{
+            margin: 1.2%;
+        }
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        display: block;
+        section{
+            margin-left:  26%;
+            margin-top: 2%;
+            width: 100%;
+        }
+        section b{
+            font-size: 0.5rem;
+            margin-top: 10%;
+            text-align: center;
+        }
+        section ul{
+            margin-left: -30%;
+        }
+        section ul li{
+            font-size: 0.4rem;
+        }
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
+}
+@media (min-width:600px) and (max-width:1024px){
+    header nav{
+        display: none;
+        .container-fluid{
+            background-image: none;
+        }
+        .boton-planea{
+            margin-left: 40%;
+            }
+        }   
+    }
+    @media (min-width:1200px) and (max-width:1440px) {
+        header{
+            .collapse{
+                display: none;
+            }
+            .hamburguesa{
+                display: none;}
+            nav{
+                    display: flex;
+                    width: 100%;
+                }
+            nav ul{
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                }
+            nav ul li{
+                
+                    background-color: black;
+                    font-size: 1.05rem;
+                }
+            nav ul li a{
+                    color: white;
+                    font-size: 1.05rem;
+                
+                }
+            .navbar{
+                display: none;
+            }
+        }
+    }
+// Responsive Ofertas
+@media (min-width:320px) and (max-width:480px) {
+    /* Sección Ofertas */
+    main{
+        section{
+            div{
+                .caja-ofertas{
+                    width: 80%;
+                    display: none;
+                }
+                .titulo-ofertas{
+                    font-size: 100%;
+                    color: black;
+                    margin-left: 15%;
+                    margin-bottom: 10%;
+                    display: none;
+                    #carouselExampleCaptions{
+                        display: flex;
+                    }
+                    #carouselExampleCaptions2{
+                        display: flex;
+                    }
+                    #carouselExampleCaptions3{
+                        display: flex;
+                    }
+                    .carousel-item{
+                        width: 50%;
+                        height: 50%;
+                        margin: 3% 5%;
+                    }
+                    .carousel-indicators{
+                        width: 30%;
+                        height: 10%;
+                        color: black;
+                    }
+                    .carousel-control-prev-icon{
+                        color: brown;
+                    }
+                    .carousel-control-next-icon{
+                        color: black;
+                    }
+                    .boton-carrusel{
+                        width: 5%;
+                    }
+                    .boton-carrusel-prev{
+                        color: black;
+                    }
+                    .boton-carrusel-next{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:600px) and (max-width:1024px){
+    header{
+        nav{
+            display: none;
+        }
+        .container-fluid{
+            background-image: none;
+        }
+    }
+}
+@media (min-width:1200px) and (max-width:1440px){
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        section{
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-rows: 1, 1fr;
+            .ofertas{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1, 1fr;
+            }
+            div{
+                #carouselExampleCaptions.carousel.slide{
+                    display: none;
+                }
+                #carouselExampleCaptions{
+                    display: none;
+                }
+                #carouselExampleCaptions2{
+                    display: none;
+                }
+                #carouselExampleCaptions3{
+                    display: none;
+                }
+                .caja-ofertas{
+                    display: flex;
+                    width: 70%
+                }
+                .titulo-ofertas{
+                    display: flex;
+                    font-size: 1.5rem;
+                    margin-left: 3%;
+                    }
+                }
+            }
+        }
+    
+    footer{
+        width: 100%;
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+// Responsive Catálogo
+@media (min-width:320px) and (max-width:480px) {
+    /* Sección Catálogo */
+    .section-catalogo{
+        display: none;
+    }
+}
+@media (min-width:600px) and (max-width:1024px){
+    header nav{
+        display: none;
+    }
+    .container-fluid{
+        background-image: none;
+    }
+}
+@media (min-width:1200px) and (max-width:1440px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+/* Sección Catálogo */
+main{
+    section{
+        .section-catalogo{
+            display: flex;
+        }
+    }
+    div{
+        .carousel-inner{
+            display: none;
+        }
+        .div-catalogo{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1, 1fr;
+        }
+        }
+    }
+}
+// Responsive Mis Viajes
+@media (min-width:320px) and (max-width:480px) {
+    #icono{
+        width: 20%;
+        height: 5%;
+    }
+    header div {
+        width: 100%;
+        color: black;
+    }
+    .container-fluid{
+        background-image: none;
+        color: black;
+    }
+    }
+    .collapse{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+    header nav{
+        display: none;
+    }
+    #navbarToggleExternalContent{
+        color: black;
+    }
+    .titulo{
+        font-size: 2rem;
+        margin: 5%;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: 80%;
+    }
+    #carouselExampleIndicators{
+        width: 100%;
+    }
+    .boton{
+        margin: 1.2%;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        display: block
+    }
+    footer section{
+        margin-left:  26%;
+        margin-top: 2%;
+    }
+    footer section b{
+        font-size: 0.9rem;
+        margin-top: 10%;
+        text-align: center;
+    }
+    footer section ul{
+        margin-left: -30%;
+    }
+    footer section ul li{
+        font-size: 0.8rem;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    @media (min-width:600px) and (max-width:1024px){
+        header{
+            nav{
+                display: none;
+            }
+            .container-fluid{
+                background-image: none;
+            }
+        }
+        main{
+            .boton-planea{
+                margin-left: 40%;
+            }
+        }
+    }
+    @media (min-width:1200px) and (max-width:1440px) {
+        
+            header{
+                width: 100%;
+                .hamburguesa{
+                    display: none;
+                }
+            }
+            main{
+                width: 100%;
+                .boton-planea{
+                    margin: 2% 45%;
+                    width: 15%;
+                    height: 20%;
+                }
+            }
+            footer{
+                width: 100%;
+                .footer1{
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+    }
+// Responsive Ayuda
+@media (min-width:320px) and (max-width:480px) {
+    // Sección Ayuda
+    }
+    @media (min-width:600px) and (max-width:1024px){
+    header nav{
+        display: none;
+    }
+    .container-fluid{
+        background-image: none;
+    }
+    }
+
+    @media (min-width:1200px) and (max-width:1440px) {
+        header{
+            width: 100%;
+            nav{
+                display: flex;
+            }
+        }
+        main{
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+        }
+        .footer1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }

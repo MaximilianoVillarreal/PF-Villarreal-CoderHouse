@@ -27,36 +27,3 @@ main{
         }
     }
 }
-
-/* Diseño Responsive */
-@media (min-width:320px) and (max-width:480px) {
-
-/* Sección Mis Viajes */
-
-/* Sección Ayuda */
-}
-@media (min-width:600px) and (max-width:1024px){
-header nav{
-    display: none;
-}
-.container-fluid{
-    background-image: none;
-}
-}
-
-@media (min-width:1200px) and (max-width:1440px) {
-
-    header{
-        width: 100%;
-    }
-    main{
-        width: 100%;
-    }
-    footer{
-        width: 100%;
-    }
-    .footer1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-}

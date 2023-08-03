@@ -91,116 +91,6 @@ footer {
   background: linear-gradient(to bottom, orange, black);
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* Index */
-  header #icono {
-    width: 20%;
-    height: 5%;
-  }
-  header div {
-    width: 100%;
-    color: black;
-  }
-  header .container-fluid {
-    background-image: none;
-    color: black;
-  }
-  header .collapse {
-    width: 100%;
-  }
-  header .navbar {
-    width: 100%;
-    display: flex;
-    padding: 0;
-  }
-  header nav {
-    display: none;
-  }
-  header #navbarToggleExternalContent {
-    color: black;
-  }
-  header .titulo {
-    font-size: 2rem;
-    margin: 5%;
-  }
-  header .carousel-inner {
-    width: 100%;
-    height: 80%;
-  }
-  header #carouselExampleIndicators {
-    width: 100%;
-  }
-  header .boton {
-    margin: 1.2%;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width: 100%;
-    display: block;
-  }
-  footer section {
-    margin-left: 26%;
-    margin-top: 2%;
-  }
-  footer section b {
-    font-size: 0.9rem;
-    margin-top: 10%;
-    text-align: center;
-  }
-  footer section ul {
-    margin-left: -30%;
-  }
-  footer section ul li {
-    font-size: 0.8rem;
-  }
-  footer .footer1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
-  header nav .container-fluid {
-    background-image: none;
-  }
-  header nav .boton-planea {
-    margin-left: 40%;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1440px) {
-  header .collapse {
-    display: none;
-  }
-  header .hamburguesa {
-    display: none;
-  }
-  header nav {
-    display: flex;
-    width: 100%;
-  }
-  header nav ul {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  header nav ul li {
-    background-color: black;
-    font-size: 1.05rem;
-  }
-  header nav ul li a {
-    color: white;
-    font-size: 1.05rem;
-  }
-  header .navbar {
-    display: none;
-  }
-}
 /*Comienza la sección Ofertas*/
 header .hamburguesa {
   display: none;
@@ -256,96 +146,6 @@ main section div .carousel-item {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* Sección Ofertas */
-  main section div .caja-ofertas {
-    width: 80%;
-    display: none;
-  }
-  main section div .titulo-ofertas {
-    font-size: 100%;
-    color: black;
-    margin-left: 15%;
-    margin-bottom: 10%;
-    display: none;
-  }
-  main section div .titulo-ofertas #carouselExampleCaptions {
-    display: flex;
-  }
-  main section div .titulo-ofertas #carouselExampleCaptions2 {
-    display: flex;
-  }
-  main section div .titulo-ofertas #carouselExampleCaptions3 {
-    display: flex;
-  }
-  main section div .titulo-ofertas .carousel-item {
-    width: 50%;
-    height: 50%;
-    margin: 3% 5%;
-  }
-  main section div .titulo-ofertas .carousel-indicators {
-    width: 30%;
-    height: 10%;
-    color: black;
-  }
-  main section div .titulo-ofertas .carousel-control-prev-icon {
-    color: brown;
-  }
-  main section div .titulo-ofertas .carousel-control-next-icon {
-    color: black;
-  }
-  main section div .titulo-ofertas .boton-carrusel {
-    width: 5%;
-  }
-  main section div .titulo-ofertas .boton-carrusel-prev {
-    color: black;
-  }
-  main section div .titulo-ofertas .boton-carrusel-next {
-    color: black;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
-  header .container-fluid {
-    background-image: none;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1440px) {
-  header {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-  }
-  main div #carouselExampleCaptions {
-    display: none;
-  }
-  main div #carouselExampleCaptions2 {
-    display: none;
-  }
-  main div #carouselExampleCaptions3 {
-    display: none;
-  }
-  main div .caja-ofertas {
-    display: flex;
-    width: 70%;
-  }
-  main div .titulo-ofertas {
-    display: flex;
-    font-size: 1.5rem;
-    margin-left: 3%;
-  }
-}
-footer {
-  width: 100%;
-}
-footer .footer1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 /*Comienza la sección Catálogo*/
 main .h3-catalogo {
   font-family: cursive;
@@ -383,111 +183,19 @@ main section div .div-catalogo {
   width: 100%;
 }
 
-/* Diseño Responsive */
-@media (min-width: 320px) and (max-width: 480px) {
-  /* Sección Catálogo */
-  .section-catalogo {
-    display: none;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
-  .container-fluid {
-    background-image: none;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1440px) {
-  header {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width: 100%;
-  }
-  footer .footer1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  /* Sección Catálogo */
-  main section .section-catalogo {
-    display: flex;
-  }
-  main div #carouselExampleIndicators-c {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c2 {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c3 {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c4 {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c5 {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c6 {
-    display: none;
-  }
-  main div #carouselExampleIndicators-c7 {
-    display: none;
-  }
-  main div #carouselExampleIndicators {
-    display: flex;
-  }
-}
 /*Comienza la sección Mis Viajes*/
-main .boton-planea {
-  margin: 2% 45%;
-  width: 160px;
-  height: 50px;
-}
 main .buscar-reservas {
   margin-left: 15px;
+}
+main .boton-planea {
+  margin: 2% 45%;
+  width: 15%;
+  height: 20%;
 }
 main .byp-misviajes {
   font-size: 1.4rem;
 }
 
-/* Diseño Responsive */
-@media (min-width: 320px) and (max-width: 480px) {
-  /* Sección Mis Viajes */
-  /* Sección Ayuda */
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
-  header .container-fluid {
-    background-image: none;
-  }
-  main .boton-planea {
-    margin-left: 40%;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1440px) {
-  header {
-    width: 100%;
-  }
-  header .hamburguesa {
-    display: none;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width: 100%;
-  }
-  footer .footer1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 /*Comienza la sección Ayuda*/
 main section form .div-ayuda {
   margin-bottom: 25px;
@@ -511,34 +219,6 @@ main section .opciones-compra2 {
   font-size: 1.3rem;
 }
 
-/* Diseño Responsive */
-@media (min-width: 320px) and (max-width: 480px) {
-  /* Sección Mis Viajes */
-  /* Sección Ayuda */
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  header nav {
-    display: none;
-  }
-  .container-fluid {
-    background-image: none;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1440px) {
-  header {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width: 100%;
-  }
-  .footer1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 header .portada {
   background-image: url(../img/portada.jpg);
   background-size: cover;
@@ -627,6 +307,401 @@ footer section a:link:hover {
   width: 125px;
   display: inline-block;
   margin-top: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Index */
+  header #icono {
+    width: 20%;
+    height: 5%;
+  }
+  header div {
+    width: 100%;
+    color: black;
+  }
+  header .container-fluid {
+    background-image: none;
+    color: black;
+  }
+  header .collapse {
+    width: 100%;
+  }
+  header .navbar {
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+  header nav {
+    display: none;
+  }
+  header #navbarToggleExternalContent {
+    color: black;
+  }
+  header .titulo {
+    font-size: 2rem;
+    margin: 5%;
+  }
+  header .carousel-inner {
+    width: 100%;
+    height: 80%;
+  }
+  header #carouselExampleIndicators {
+    width: 100%;
+  }
+  header .boton {
+    margin: 1.2%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    display: block;
+  }
+  footer section {
+    margin-left: 26%;
+    margin-top: 2%;
+    width: 100%;
+  }
+  footer section b {
+    font-size: 0.5rem;
+    margin-top: 10%;
+    text-align: center;
+  }
+  footer section ul {
+    margin-left: -30%;
+  }
+  footer section ul li {
+    font-size: 0.4rem;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header nav .container-fluid {
+    background-image: none;
+  }
+  header nav .boton-planea {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header .collapse {
+    display: none;
+  }
+  header .hamburguesa {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    width: 100%;
+  }
+  header nav ul {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header nav ul li {
+    background-color: black;
+    font-size: 1.05rem;
+  }
+  header nav ul li a {
+    color: white;
+    font-size: 1.05rem;
+  }
+  header .navbar {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Ofertas */
+  main section div .caja-ofertas {
+    width: 80%;
+    display: none;
+  }
+  main section div .titulo-ofertas {
+    font-size: 100%;
+    color: black;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    display: none;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions {
+    display: flex;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions2 {
+    display: flex;
+  }
+  main section div .titulo-ofertas #carouselExampleCaptions3 {
+    display: flex;
+  }
+  main section div .titulo-ofertas .carousel-item {
+    width: 50%;
+    height: 50%;
+    margin: 3% 5%;
+  }
+  main section div .titulo-ofertas .carousel-indicators {
+    width: 30%;
+    height: 10%;
+    color: black;
+  }
+  main section div .titulo-ofertas .carousel-control-prev-icon {
+    color: brown;
+  }
+  main section div .titulo-ofertas .carousel-control-next-icon {
+    color: black;
+  }
+  main section div .titulo-ofertas .boton-carrusel {
+    width: 5%;
+  }
+  main section div .titulo-ofertas .boton-carrusel-prev {
+    color: black;
+  }
+  main section div .titulo-ofertas .boton-carrusel-next {
+    color: black;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .container-fluid {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  main section .ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1, 1fr;
+  }
+  main section div #carouselExampleCaptions.carousel.slide {
+    display: none;
+  }
+  main section div #carouselExampleCaptions {
+    display: none;
+  }
+  main section div #carouselExampleCaptions2 {
+    display: none;
+  }
+  main section div #carouselExampleCaptions3 {
+    display: none;
+  }
+  main section div .caja-ofertas {
+    display: flex;
+    width: 70%;
+  }
+  main section div .titulo-ofertas {
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 3%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Sección Catálogo */
+  .section-catalogo {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  .container-fluid {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Sección Catálogo */
+  main section .section-catalogo {
+    display: flex;
+  }
+  main div .carousel-inner {
+    display: none;
+  }
+  main div .div-catalogo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1, 1fr;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #icono {
+    width: 20%;
+    height: 5%;
+  }
+  header div {
+    width: 100%;
+    color: black;
+  }
+  .container-fluid {
+    background-image: none;
+    color: black;
+  }
+}
+.collapse {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 0;
+}
+
+header nav {
+  display: none;
+}
+
+#navbarToggleExternalContent {
+  color: black;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 80%;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+}
+
+.boton {
+  margin: 1.2%;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  display: block;
+}
+
+footer section {
+  margin-left: 26%;
+  margin-top: 2%;
+}
+
+footer section b {
+  font-size: 0.9rem;
+  margin-top: 10%;
+  text-align: center;
+}
+
+footer section ul {
+  margin-left: -30%;
+}
+
+footer section ul li {
+  font-size: 0.8rem;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .container-fluid {
+    background-image: none;
+  }
+  main .boton-planea {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  header .hamburguesa {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main .boton-planea {
+    margin: 2% 45%;
+    width: 15%;
+    height: 20%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  .container-fluid {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
