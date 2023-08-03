@@ -1,8 +1,5 @@
 footer  {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding-bottom: 20px;
+    border-top: solid;
     border-left: solid;
     border-right: solid;
     background-color: black;
@@ -11,17 +8,13 @@ footer  {
     section{
         color: white;
         display: inline-block; 
-        margin: 0px 70px;
-        margin-bottom: 0px; 
+        margin: 10% 30%;
+        margin-bottom: 0%; 
         text-align: start;
-        
         b{
-            color: blue;
+            color: black;
         }
         ul li{
-            color: white;
-        }
-        a:link:hover{
             color: white;
         }
     }

@@ -115,6 +115,26 @@
                 display: none;
             }
         }
+        main{
+            #carouselExampleIndicators{
+                display: flex;
+            }
+            .oferta-container{
+                display: flex;
+                height: 400px;
+            }
+            .carousel-inner{
+                display: flex;
+            }
+            section{
+                .carousel-inner{
+                    display: flex;
+                }
+                .oferta-container{
+                    display: flex;
+                }
+            }
+        }
     }
 // Responsive Ofertas
 @media (min-width:320px) and (max-width:480px) {
@@ -183,6 +203,28 @@
             background-image: none;
         }
     }
+    main{
+        #carouselExampleCaptions{
+            display: none;
+        }
+        #carouselExampleCaptions2{
+            display: none;
+        }
+        #carouselExampleCaptions3{
+            display: none;
+        }
+        section{
+            .caja-ofertas{
+                width: 80%;
+            }
+            .titulo-ofertas{
+                font-size: 1.2rem;
+            }
+        }
+        .sec-ofer-1{
+            width: 95%;
+        }
+    }
 }
 @media (min-width:1200px) and (max-width:1440px){
     header{
@@ -244,6 +286,20 @@
     .container-fluid{
         background-image: none;
     }
+    main{
+        .titulo{
+            font-size: 1.7rem;
+        }
+        .section-catalogo{
+            display: none;
+        }
+        .carousel-inner{
+            width: 90%;
+        }
+        .carousel-control-next{
+            width: 30%;
+        }
+    }
 }
 @media (min-width:1200px) and (max-width:1440px) {
     header{
@@ -257,6 +313,7 @@
         .footer1{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1, 1fr;
         }
     }
 
@@ -385,6 +442,7 @@ main{
                 .footer1{
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: 1, 1fr;
                 }
             }
     }
@@ -417,5 +475,6 @@ main{
         .footer1{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1, 1fr;
         }
     }

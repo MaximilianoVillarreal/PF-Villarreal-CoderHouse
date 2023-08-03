@@ -20,6 +20,9 @@ main{
                 display: flex; flex-direction: row;
                 border-radius: 20px;
             }
+            .caja-ofertas:hover{
+                @include transition-img;
+            }
             .titulo-ofertas{
             font-family: 'Russo One', sans-serif;
             font-size: 1.6rem;

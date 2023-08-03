@@ -23,6 +23,30 @@ $feunte-principal: 'Russo One', sans-serif;
 @mixin estilo-titulos{
     background: linear-gradient(to bottom, orange, black);
 }
+@mixin transition-img{
+    height: 300px;
+    transition: height 2s;
+}
+@mixin transition-catalogo{
+    width: 300px;
+    transition: width 2s;
+}
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+        transform: scale(2) translateY(75px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+@mixin animacion-footer{
+        color: black;
+}
+@mixin animacion-nav{
+    color: orange;
+}
 // Mixins
 @mixin flex-box {
     display: flex;

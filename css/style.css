@@ -20,6 +20,16 @@ img {
   max-width: 100%;
 }
 
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+    transform: scale(2) translateY(75px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
 /*Comienza la sección index*/
 header nav {
   background: linear-gradient(to bottom, orange, black);
@@ -110,6 +120,10 @@ main div .caja-ofertas {
   flex-direction: row;
   border-radius: 20px;
 }
+main div .caja-ofertas:hover {
+  height: 300px;
+  transition: height 2s;
+}
 main div .titulo-ofertas {
   font-family: "Russo One", sans-serif;
   font-size: 1.6rem;
@@ -137,6 +151,10 @@ main div .carousel-item {
 }
 
 /*Comienza la sección Catálogo*/
+header nav ul li a:hover {
+  color: orange;
+}
+
 main .h3-catalogo {
   font-family: cursive;
   font-size: 1.8rem;
@@ -148,6 +166,10 @@ main h3 div p {
   font-family: "Russo One", sans-serif;
   font-size: 1.6rem;
   display: none;
+}
+main .catalogo-item:hover {
+  width: 300px;
+  transition: width 2s;
 }
 main section .section-catalogo {
   width: 100%;
@@ -164,6 +186,10 @@ main section div .catalogo-item {
   margin-left: 15px;
   margin-bottom: 40px;
   margin-right: 0px;
+  animation-name: aparicion;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
+  animation-fill-mode: forwards;
 }
 main section div .div-catalogo {
   display: grid;
@@ -171,6 +197,10 @@ main section div .div-catalogo {
   grid-template-rows: repeat(1, fr);
   margin-top: 15px;
   width: 100%;
+}
+
+footer ul li a:hover {
+  color: black;
 }
 
 /*Comienza la sección Mis Viajes*/
@@ -251,10 +281,7 @@ header nav ul li a {
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  padding-bottom: 20px;
+  border-top: solid;
   border-left: solid;
   border-right: solid;
   background-color: black;
@@ -264,17 +291,14 @@ footer {
 footer section {
   color: white;
   display: inline-block;
-  margin: 0px 70px;
-  margin-bottom: 0px;
+  margin: 10% 30%;
+  margin-bottom: 0%;
   text-align: start;
 }
 footer section b {
-  color: blue;
+  color: black;
 }
 footer section ul li {
-  color: white;
-}
-footer section a:link:hover {
   color: white;
 }
 
@@ -411,6 +435,22 @@ footer section a:link:hover {
   header .navbar {
     display: none;
   }
+  main #carouselExampleIndicators {
+    display: flex;
+  }
+  main .oferta-container {
+    display: flex;
+    height: 400px;
+  }
+  main .carousel-inner {
+    display: flex;
+  }
+  main section .carousel-inner {
+    display: flex;
+  }
+  main section .oferta-container {
+    display: flex;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   /* Sección Ofertas */
@@ -470,6 +510,24 @@ footer section a:link:hover {
   header .container-fluid {
     background-image: none;
   }
+  main #carouselExampleCaptions {
+    display: none;
+  }
+  main #carouselExampleCaptions2 {
+    display: none;
+  }
+  main #carouselExampleCaptions3 {
+    display: none;
+  }
+  main section .caja-ofertas {
+    width: 80%;
+  }
+  main section .titulo-ofertas {
+    font-size: 1.2rem;
+  }
+  main .sec-ofer-1 {
+    width: 95%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   header {
@@ -525,6 +583,18 @@ footer section a:link:hover {
   .container-fluid {
     background-image: none;
   }
+  main .titulo {
+    font-size: 1.7rem;
+  }
+  main .section-catalogo {
+    display: none;
+  }
+  main .carousel-inner {
+    width: 90%;
+  }
+  main .carousel-control-next {
+    width: 30%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   header {
@@ -539,6 +609,7 @@ footer section a:link:hover {
   footer .footer1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
   }
   /* Sección Catálogo */
   main section .section-catalogo {
@@ -669,6 +740,7 @@ footer section ul li {
   footer .footer1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -695,6 +767,7 @@ footer section ul li {
   .footer1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
   }
 }
 
