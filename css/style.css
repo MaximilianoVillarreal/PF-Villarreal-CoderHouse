@@ -97,21 +97,11 @@ header .hamburguesa {
 }
 
 main section .sec-ofer-1 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1, 1fr;
 }
-main section .sec-ofer-2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-main section .sec-ofer-3 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-main section div .caja-ofertas {
+main div .caja-ofertas {
   margin: 50px 20px;
   border: solid;
   width: 250px;
@@ -120,7 +110,7 @@ main section div .caja-ofertas {
   flex-direction: row;
   border-radius: 20px;
 }
-main section div .titulo-ofertas {
+main div .titulo-ofertas {
   font-family: "Russo One", sans-serif;
   font-size: 1.6rem;
   color: black;
@@ -130,19 +120,19 @@ main section div .titulo-ofertas {
   margin-top: 0%;
   position: relative;
 }
-main section div #carouselExampleCaptions {
+main div #carouselExampleCaptions {
   display: none;
 }
-main section div #carouselExampleCaptions2 {
+main div #carouselExampleCaptions2 {
   display: none;
 }
-main section div #carouselExampleCaptions3 {
+main div #carouselExampleCaptions3 {
   display: none;
 }
-main section div .carousel-indicators {
+main div .carousel-indicators {
   display: none;
 }
-main section div .carousel-item {
+main div .carousel-item {
   display: none;
 }
 
