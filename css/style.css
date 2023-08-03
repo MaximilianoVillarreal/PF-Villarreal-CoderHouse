@@ -96,7 +96,7 @@ header .hamburguesa {
   display: none;
 }
 
-main section .sec-ofer-1 {
+main .sec-ofer-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1, 1fr;
@@ -187,8 +187,9 @@ main .byp-misviajes {
 }
 
 /*Comienza la sección Ayuda*/
-main section form .div-ayuda {
-  margin-bottom: 25px;
+main form .div-ayuda {
+  margin-bottom: 2%;
+  margin-left: 4%;
 }
 main section #section1-ayuda {
   text-align: left;
@@ -413,6 +414,9 @@ footer section a:link:hover {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   /* Sección Ofertas */
+  main .carousel-inner {
+    margin-bottom: 15%;
+  }
   main section div .caja-ofertas {
     width: 80%;
     display: none;

@@ -120,6 +120,9 @@
 @media (min-width:320px) and (max-width:480px) {
     /* Sección Ofertas */
     main{
+        .carousel-inner{
+            margin-bottom: 15%;
+        }
         section{
             div{
                 .caja-ofertas{
