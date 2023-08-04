@@ -36,7 +36,7 @@ header nav {
 }
 
 main {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/15226638_v660-mon-04-travelbadge.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/15226638_v660-mon-04-travelbadge.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +69,7 @@ main .section-index {
 }
 main #preguntas-frecuentes .titulos-preguntas {
   margin-left: 35px;
+  color: orange;
 }
 main #preguntas-frecuentes .p-preguntas {
   margin-left: 10px;
@@ -234,6 +235,7 @@ main section .p-preguntas2 {
 }
 main section .titulos-ayuda {
   margin-left: 5px;
+  color: orange;
 }
 main section .opciones-compra2 {
   margin-left: 15px;
@@ -366,6 +368,9 @@ footer section ul li {
   header .boton {
     margin: 1.2%;
   }
+  body {
+    width: 100%;
+  }
   main {
     width: 100%;
   }
@@ -407,6 +412,20 @@ footer section ul li {
     margin-left: 40%;
   }
 }
+main .oferta-container {
+  height: 300px;
+}
+main .carousel-inner2 {
+  height: 10%;
+}
+main .carousel-control-next-icon {
+  margin-top: 230%;
+  margin-right: -50%;
+}
+main .carousel-control-prev-icon- {
+  margin-top: 470%;
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   header .collapse {
     display: none;
@@ -439,11 +458,10 @@ footer section ul li {
     display: flex;
   }
   main .oferta-container {
-    display: flex;
-    height: 400px;
+    height: 450px;
   }
-  main .carousel-inner {
-    display: flex;
+  main .carousel-inner2 {
+    height: 10%;
   }
   main section .carousel-inner {
     display: flex;

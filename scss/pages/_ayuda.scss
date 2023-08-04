@@ -21,6 +21,7 @@ main{
         }
         .titulos-ayuda{
             margin-left: 5px;
+            @include estilo-titulos2;
         }
         .opciones-compra2{
             margin-left: 15px;

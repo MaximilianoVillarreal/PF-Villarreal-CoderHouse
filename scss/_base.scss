@@ -47,6 +47,9 @@ $feunte-principal: 'Russo One', sans-serif;
 @mixin animacion-nav{
     color: orange;
 }
+@mixin estilo-titulos2{
+    color: orange;
+}
 // Mixins
 @mixin flex-box {
     display: flex;
