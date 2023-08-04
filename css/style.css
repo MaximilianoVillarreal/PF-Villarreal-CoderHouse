@@ -46,6 +46,9 @@ main section .titulos-2 {
   padding: 20px 0;
   margin-left: 10px;
 }
+main section .boton:hover {
+  color: orange;
+}
 main #preguntas-frecuentes {
   margin-bottom: 100px;
 }
@@ -162,6 +165,7 @@ main .h3-catalogo {
   margin-bottom: 15px;
   margin-top: 15px;
   margin-left: 15px;
+  color: orange;
 }
 main h3 div p {
   font-family: "Russo One", sans-serif;
@@ -418,12 +422,18 @@ main .oferta-container {
 main .carousel-inner2 {
   height: 10%;
 }
-main .carousel-control-next-icon {
-  margin-top: 230%;
-  margin-right: -50%;
+main .carousel-control-next {
+  margin-top: 25%;
 }
-main .carousel-control-prev-icon- {
-  margin-top: 470%;
+main .carousel-control-next-icon {
+  margin-top: 25%;
+}
+main .carousel-control-prev {
+  margin-top: 25%;
+  width: 25%;
+}
+main .carousel-control-prev-icon {
+  margin-top: 25%;
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
@@ -593,6 +603,9 @@ main .carousel-control-prev-icon- {
   .section-catalogo {
     display: none;
   }
+  main .carousel-inner {
+    width: 90%;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   header nav {
@@ -604,7 +617,7 @@ main .carousel-control-prev-icon- {
   main .titulo {
     font-size: 1.7rem;
   }
-  main .section-catalogo {
+  main section .div-catalogo {
     display: none;
   }
   main .carousel-inner {
@@ -630,6 +643,21 @@ main .carousel-control-prev-icon- {
     grid-template-rows: 1, 1fr;
   }
   /* Sección Catálogo */
+  main .carousel-control-prev {
+    margin-bottom: 0%;
+    margin-top: 10%;
+  }
+  main .carousel-control-next {
+    margin-bottom: 0%;
+    margin-top: 10%;
+    margin-right: 10%;
+  }
+  main .carousel-control-prev-icon {
+    display: none;
+  }
+  main .carousel-control-next-icon {
+    display: none;
+  }
   main section .section-catalogo {
     display: flex;
   }

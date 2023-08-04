@@ -50,6 +50,9 @@ $feunte-principal: 'Russo One', sans-serif;
 @mixin estilo-titulos2{
     color: orange;
 }
+@mixin estilo-botones{
+    color: orange;
+}
 // Mixins
 @mixin flex-box {
     display: flex;

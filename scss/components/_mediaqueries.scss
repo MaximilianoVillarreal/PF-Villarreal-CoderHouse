@@ -94,12 +94,18 @@
         .carousel-inner2{
             height: 10%;
         }
-        .carousel-control-next-icon{
-            margin-top: 230%;
-            margin-right: -50%;
+        .carousel-control-next{
+            margin-top: 25%;
         }
-        .carousel-control-prev-icon-{
-            margin-top: 470%;
+        .carousel-control-next-icon{
+            margin-top: 25%;
+        }
+        .carousel-control-prev{
+            margin-top: 25%;
+            width: 25%;
+        }
+        .carousel-control-prev-icon{
+            margin-top: 25%;
         }
     }
     @media (min-width:1200px) and (max-width:1440px) {
@@ -295,6 +301,11 @@
     .section-catalogo{
         display: none;
     }
+    main{
+        .carousel-inner{
+            width: 90%;
+        }
+    }
 }
 @media (min-width:600px) and (max-width:1024px){
     header nav{
@@ -307,8 +318,10 @@
         .titulo{
             font-size: 1.7rem;
         }
-        .section-catalogo{
-            display: none;
+        section{
+            .div-catalogo{
+                display: none;
+            }
         }
         .carousel-inner{
             width: 90%;
@@ -336,6 +349,21 @@
 
 /* Sección Catálogo */
 main{
+    .carousel-control-prev{
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+    .carousel-control-next{
+        margin-bottom: 0%;
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+    .carousel-control-prev-icon{
+        display: none;
+    }
+    .carousel-control-next-icon{
+        display: none;
+    }
     section{
         .section-catalogo{
             display: flex;
